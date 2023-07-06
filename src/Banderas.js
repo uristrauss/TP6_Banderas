@@ -5,6 +5,7 @@ import axios from 'axios';
 function Banderas() {
 const [banderas, setBanderas] = useState([]);
 const [cargando, setCargando] = useState(true);
+// const [pais, setPais] = useState({});
 
     useEffect(() =>{
 
@@ -14,6 +15,7 @@ const [cargando, setCargando] = useState(true);
         //    console.log(response)
         setBanderas(response.data.data);
         setCargando(false);
+        //setPais(numeroRandom());
         })
         .catch((error) => {
             console.error(error);
@@ -24,6 +26,7 @@ const [cargando, setCargando] = useState(true);
         
         function numeroRandom(max) {
         return Math.floor(Math.random()*banderas.length);
+            //return banderas[Math.floor(Math.random()*banderas.length)];
         }
 
       if (cargando) {
