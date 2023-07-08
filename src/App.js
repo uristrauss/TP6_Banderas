@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>BANDERAS</h1>
+        <h1 className='titulo'>EL JUEGO DE LAS BANDERAS </h1>
         <Banderas/>
       </div>
     </div>
